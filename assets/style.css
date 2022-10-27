@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Secular One', sans-serif;
+}
+
+.screen{
+	display: flex;
+	height: 100vh;
+}
+
+.left-side{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.left-side img{
+	max-width: 350px;
+	height: auto;
+}
+
+.right-side{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	background-color: #fd82a7;
+}
+
+.right-side h1{
+	font-size: 40px;
+	color: #363636;
+}
+
+.right-side label{
+	display: block;
+	margin: 20px 0; 
+	color: #fff;
+}
+
+.right-side input{
+	font-size: 15px;
+	border: 1px solid #999;
+	border-radius: 3px;
+	padding: 8px;
+	font-size: 14px;
+	width: 100%;
+	outline: 0;
+	margin: 5px 0;
+}
+
+.right-side input:nth-child(4){
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.login{
+	color: #ffe5b5;
+}
+
+.login a{
+	color: #ffff00;
+}
+
+.erro{
+	font-size: 15px;
+	color: #aa316a;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 3px;
+}
