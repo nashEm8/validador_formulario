@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Validador de Formulário</title>
+	<link rel="stylesheet" href="./assets/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="screen">
+		<div class="left-side">
+			<img src="./assets/imagens/img-form.png">
+		</div>
+		<div class="right-side">
+
+			<h1>Crie sua conta</h1>
+			<form method="POST" action="cadastro.php" class="formvalidar"> 
+				<label>Seu nome: <br/>
+					<input type="text" name="name" autocomplete="off" data-rules="required|min=2"/>
+				</label>
+				<label>Email: <br/>
+					<input type="text" name="email" autocomplete="off" data-rules="required|email"/>
+				</label>
+				<label>Senha: <br/>
+					<input type="password" name="password" autocomplete="off" data-rules="required|min=4"/>
+				</label>
+				<input type="submit" value="Cadastrar">
+
+				<div class="login">
+					Já possui uma conta? 
+					<a href="#">Faça seu login.</a>
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+	<script src="./main.js"></script>
+</body>
+</html>
